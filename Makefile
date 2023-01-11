@@ -1,31 +1,47 @@
-SRCS         = ./srcs/
+SRCS_DIR        = srcs
 
-SRC_DECODER    = $(SRCS)./decoder/main.c
+OBJS_DIR		= objs
 
-OBJ_DECODER    = $(SRC_DECODER:.c=.o)
+DECODER_FILES	= decoder/main.c
 
-SRC_ENCODER    = $(SRCS)./encoder/main.c
+ENCODER_FILES	= encoder/main.c
 
-OBJ_ENCODER    = $(SRC_ENCODER:.c=.o)
+SCRS_DECODER	= $(addprefix $(SRCS_DIR)/, $(DECODER_FILES))
+
+OBJS_DECODER    = $(addprefix $(OBJS_DIR)/, $(DECODER_FILES:%.c=%.o))
+
+SCRS_ENCODER	= $(addprefix $(SRCS_DIR)/, $(ENCODER_FILES))
+
+OBJS_ENCODER    = $(addprefix $(OBJS_DIR)/, $(ENCODER_FILES:%.c=%.o))
+
+INCLUDES		= includes
 
 CC            = gcc
 
-CFLAGS        = -Wall -Wextra -Werror -g
+CFLAGS        = -Wall -Wextra -Werror -g 
+
+I_CC			= -I $(INCLUDES)
 
 ENCODER_NAME    = encoder
 
 DECODER_NAME    = decoder
 
+SUBDIRS			= decoder encoder
+
 all: $(ENCODER_NAME) $(DECODER_NAME)
 
-encoder:	$(OBJ_DECODER)
-	$(CC) $(CFLAGS) $(OBJ_DECODER) -o $(ENCODER_NAME)
+$(ENCODER_NAME):	$(OBJS_ENCODER)
+	$(CC) $(CFLAGS) $(OBJS_ENCODER) -o $(ENCODER_NAME)
 
-decoder:	$(OBJ_ENCODER)
-	$(CC) $(CFLAGS) $(OBJ_ENCODER) -o $(DECODER_NAME)
+$(DECODER_NAME):	$(OBJS_DECODER)
+	$(CC) $(CFLAGS) $(OBJS_DECODER) -o $(DECODER_NAME)
+
+$(OBJS_DIR)/%.o	: $(SRCS_DIR)/%.c
+	mkdir -p $(OBJS_DIR) $(addprefix $(OBJS_DIR)/, $(SUBDIRS))
+	$(CC) $(CFLAGS) $(I_CC) -c $< -o $@
 
 clean:
-	rm -rf  $(DIR)*.o
+	rm -rf  $(OBJS_DIR)
 
 fclean: clean
 	rm -rf $(ENCODER_NAME) $(DECODER_NAME)

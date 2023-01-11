@@ -1,4 +1,4 @@
-#include "../../includes/encoder.h"
+#include "encoder.h"
 
 int	main()
 {

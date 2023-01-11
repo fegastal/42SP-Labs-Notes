@@ -1,4 +1,4 @@
-#include "../../includes/decoder.h"
+#include "decoder.h"
 
 //-------------- parte 1: tabela de frequência --------------
 void	inicializa_tabela_com_zero(unsigned int tab[]) 
