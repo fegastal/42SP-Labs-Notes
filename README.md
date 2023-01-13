@@ -21,7 +21,7 @@ Short on time? You can check the [challenge subject 🥵](https://github.com/feg
 
 - **The Challenge**
 
-After reading the subject, I had an impression that it was a project similar to the creation of two programs that communicate through signals, "MiniTalk". 
+After reading the subject, I had an impression that it was a project similar to the creation of two programs that communicate through signals, ["MiniTalk"](https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/Minitalk_fgastal-.pdf). 
 
 However, the communication between the two programs in question - encoder and decoder - should be via Shared Memory Operations.
 
