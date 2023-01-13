@@ -21,13 +21,13 @@ Short on time? You can check the [challenge subject 🥵](https://github.com/feg
 
 - **The Challenge**
 
-> After reading the subject, I had an impression that it was a project similar to the creation of two programs that communicate through signals, "MiniTalk". 
+After reading the subject, I had an impression that it was a project similar to the creation of two programs that communicate through signals, "MiniTalk". 
 
 However, the communication between the two programs in question - encoder and decoder - should be via Shared Memory Operations.
 
 In order to understand these new concepts and map out the new challenges ahead of me, I chose to follow initial references on the topic, such as:
 
-This playlist on YouTube: [Huffman's Algorithm in C](https://www.youtube.com/watch?v=o8UPZ_KDWdU&list=PLqJK4Oyr5WShtxF1Ch3Vq4b1Dzzb-WxbP&index=1)
+> This playlist on YouTube: [Huffman's Algorithm in C](https://www.youtube.com/watch?v=o8UPZ_KDWdU&list=PLqJK4Oyr5WShtxF1Ch3Vq4b1Dzzb-WxbP&index=1)
 
-And this book: [Mastering Algorithms with C - Useful Techniques from Sorting to Encryption](https://www.amazon.com.br/Mastering-Algorithms-C-Kyle-Loudon/dp/1565924533)
+> And this book: [Mastering Algorithms with C - Useful Techniques from Sorting to Encryption](https://www.amazon.com.br/Mastering-Algorithms-C-Kyle-Loudon/dp/1565924533)
 
