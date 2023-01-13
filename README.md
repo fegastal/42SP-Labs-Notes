@@ -17,7 +17,7 @@ It provides a very important stage in the life of a cadet, since it is the first
 
 Short on time? You can check the [challenge subject 🥵](https://github.com/fegastal/42SP-Labs-Notes/blob/main/SUBJECT.md)!
 
-- **The Challenge**
+- **Phase 1 - Initial Studies 📚**
 
 After reading the subject, I had an impression that it was a project similar to the creation of two programs that communicate through signals, [MiniTalk](https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/Minitalk_fgastal-.pdf). 
 
@@ -28,4 +28,5 @@ In order to understand these new concepts and map out the new challenges ahead o
 > This playlist on YouTube: [Huffman's Algorithm in C](https://www.youtube.com/watch?v=o8UPZ_KDWdU&list=PLqJK4Oyr5WShtxF1Ch3Vq4b1Dzzb-WxbP&index=1)
 
 > And this book: [Mastering Algorithms with C - Useful Techniques from Sorting to Encryption](https://www.amazon.com.br/Mastering-Algorithms-C-Kyle-Loudon/dp/1565924533)
+
 
