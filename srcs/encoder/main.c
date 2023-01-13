@@ -692,7 +692,7 @@ int	main()
 	unsigned char *codificado;
 	unsigned char *decodificado;
 
-	setlocale(LC_ALL, ""utf8"");
+	setlocale(LC_ALL, "utf8");
 
 	//-------------- parte 1: Tabela de frequência --------------
 	inicializa_tabela_com_zero(tabela_frequencia);
