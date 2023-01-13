@@ -13,7 +13,7 @@
 
 ## Introduction
 
-The Labs project at school 42 São Paulo has the proposal that interested students develop a proposed challenge in order to get a 6-month experience in some of the partner companies.
+The Labs project at school [42 São Paulo](https://www.42sp.org.br/) has the proposal that interested students develop a proposed challenge in order to get a 6-month experience in some of the partner companies.
 
 It provides a very important stage in the life of a cadet, since it is the first contact with the job market. It is necessary that the student is at least in the first project of the second phase of the game: the Push Swap - creation of a program to sort numbers -, since the challenge of the selection process in question challenges us in some more advanced subjects, such as Linked List, binary tree, bitwise operations and shared memory.
 
