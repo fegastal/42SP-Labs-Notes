@@ -1,4 +1,4 @@
-## 42 Labs 👩🏻‍🔬🧪 | Encoder and Decoder Programs
+### 42 Labs 👩🏻‍🔬🧪 | Encoder and Decoder Programs
 
 
 <p align="center">
