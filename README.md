@@ -1,4 +1,4 @@
-## 42 Labs | Encoder and Decoder Programs
+##					42 Labs | Encoder and Decoder Programs
 
 <p align="center">
   <a href="#license"><img src="https://img.shields.io/github/license/sourcerer-io/hall-of-fame.svg?colorB=ff0000"></a>
