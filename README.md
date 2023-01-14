@@ -61,8 +61,6 @@ For example, in the sentence "I want to get an internship", we have a certain fr
 
 In this case, we have:
 
-<a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/frequency_table.png" alt="Frequency Table"></a>
-
 symbol  | frequency |
 ---|------|
 `q` | 1	|
