@@ -88,34 +88,32 @@ symbol  | frequency |
 `r` | 1	|
 `s` | 1 |
 
+<details>
+  <summary>The functions created for this step were:</summary>
 For this table to be generated, it was necessary to create 3 specific functions:
 
+*```void initializes_tab_with_zero(unsigned int tab[])``` has the goal of making the table initialization from zero elements, considering that TAM equals 256.
  /*
 Join the string s2 to string s1 generating a new string.
 @param[out] s1 The memory area to join to.
 @param[in]  s2  The memory area to copy from.
 */
-```void initializes_tab_with_zero(unsigned int tab[])``` has the goal of making the table initialization from zero elements, considering that TAM equals 256.
 
+*```void fill_tab_frequency(unsigned char texto[], unsigned int tab[])``` receives both the characters (char) that are passed as a text array, as well as the amount of their frequency (int);
  /*
-Join the string s2 to string s1 generating a new string.
+ Join the string s2 to string s1 generating a new string.
 @param[out] s1 The memory area to join to.
 @param[in]  s2  The memory area to copy from.
 */
-```void fill_tab_frequency(unsigned char texto[], unsigned int tab[])``` receives both the characters (char) that are passed as a text array, as well as the amount of their frequency (int);
 
- /*
+*```void print_tab_frequency(unsigned int tab[])``` takes the table generated in the previous function and prints it to the terminal. :) It was used as a test, basically.
+/*
 Join the string s2 to string s1 generating a new string.
 @param[out] s1 The memory area to join to.
 @param[in]  s2  The memory area to copy from.
 */
-```void print_tab_frequency(unsigned int tab[])``` takes the table generated in the previous function and prints it to the terminal. :) It was used as a test, basically.
+</details>
 
- /*
-Join the string s2 to string s1 generating a new string.
-@param[out] s1 The memory area to join to.
-@param[in]  s2  The memory area to copy from.
-*/
 In the figure below, we can analyze how this table is generated in the output:
 
 <a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/frequency_table.png" alt="Frequency Table"></a>
@@ -183,6 +181,8 @@ Join the string s2 to string s1 generating a new string.
 @param[out] s1 The memory area to join to.
 @param[in]  s2  The memory area to copy from.
 */
+
+</details>
 
 🐾 3 | Building the Huffman Tree
 
