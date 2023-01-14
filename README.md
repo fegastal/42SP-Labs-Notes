@@ -90,12 +90,32 @@ symbol  | frequency |
 
 For this table to be generated, it was necessary to create 3 specific functions:
 
-The function ```initializes_tab_with_zero``` has the goal of making the table initialization from zero elements, considering that TAM equals 256.
+ /*
+Join the string s2 to string s1 generating a new string.
+@param[out] s1 The memory area to join to.
+@param[in]  s2  The memory area to copy from.
+*/
+```void initializes_tab_with_zero(unsigned int tab[])``` has the goal of making the table initialization from zero elements, considering that TAM equals 256.
 
-The function ```fill_tab_frequency``` receives both the characters (char) that are passed as a text array, as well as the amount of their frequency (int);
+ /*
+Join the string s2 to string s1 generating a new string.
+@param[out] s1 The memory area to join to.
+@param[in]  s2  The memory area to copy from.
+*/
+```void fill_tab_frequency(unsigned char texto[], unsigned int tab[])``` receives both the characters (char) that are passed as a text array, as well as the amount of their frequency (int);
 
-The function ```print_tab_frequency``` takes the table generated in the previous function and prints it to the terminal. :) It was used as a test, basically.
+ /*
+Join the string s2 to string s1 generating a new string.
+@param[out] s1 The memory area to join to.
+@param[in]  s2  The memory area to copy from.
+*/
+```void print_tab_frequency(unsigned int tab[])``` takes the table generated in the previous function and prints it to the terminal. :) It was used as a test, basically.
 
+ /*
+Join the string s2 to string s1 generating a new string.
+@param[out] s1 The memory area to join to.
+@param[in]  s2  The memory area to copy from.
+*/
 In the figure below, we can analyze how this table is generated in the output:
 
 <a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/frequency_table.png" alt="Frequency Table"></a>
@@ -106,7 +126,9 @@ After going through our text and once we already have this frequency table, it w
 
 We need to be careful about this, because if we order the table in ascending order, when we remove the elements from the list, they will be removed from the beginning and we need to always remove the elements with the lowest frequency.
 
-Sorting the previous sentence in ascending order, we have: 
+It is also nice to note that the Linked List knowledge was started along the [Push Swap](https://miro.com/app/board/uXjVPG5JxXA=/?share_link_id=610858182881) project, the first project of the second phase of 42SP :) this helped in the design of this part of the project.
+
+Sorting the previous sentence "I want to get an internship" in ascending order, we have: 
 
 symbol  | frequency |
 ---|------|
@@ -131,11 +153,35 @@ For example, by taking row 01 of the table, `w` with frequency 1, we can generat
 
 It has one pointer to the left and one to the right, and all nodes are exactly the same: it has one character and one frequency.
 
+The functions created for this step were:
 
+ /*
+Join the string s2 to string s1 generating a new string.
+@param[out] s1 The memory area to join to.
+@param[in]  s2  The memory area to copy from.
+*/
+```void criar_lista(Lista *lista);```
 
+ /*
+Join the string s2 to string s1 generating a new string.
+@param[out] s1 The memory area to join to.
+@param[in]  s2  The memory area to copy from.
+*/
+```void inserir_ordenado(Lista *lista, No *no);```
 
+ /*
+Join the string s2 to string s1 generating a new string.
+@param[out] s1 The memory area to join to.
+@param[in]  s2  The memory area to copy from.
+*/
+```void preencher_lista(unsigned int tab[], Lista *lista);```
 
+ /*
+Join the string s2 to string s1 generating a new string.
+@param[out] s1 The memory area to join to.
+@param[in]  s2  The memory area to copy from.
+*/
+```void imprimir_lista(Lista *lista);```
 
-
-
+🐾 3 | Building the Huffman Tree
 
