@@ -101,3 +101,7 @@ Once we already have this frequency table, it will originate a list or a priorit
 So I need the frequency of each symbol/character to be able to assemble my binary tree. It's intended to make the structure orderly without having to reorder it for faster searching.
 
 <a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/binary_tree.png" alt="Binary Tree"></a>
+
+Nota-se que é necessária a recursividade para a implementação dessa árvore, porque não sabemos quantos nós serão criados. É importante notar também: o próximo número é menor ou maior / igual que o anterior? (: 
+
+Cada caractere (1 char) possui 8 bits (1 byte) para serem representados. Utilizando a tabela ASCII, 
