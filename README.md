@@ -55,11 +55,13 @@ It makes use of several data structures, such as table, chained list or priority
 
 So we need to focus on the coding steps:
 
-🐾 1 | Determinar a frequência de cada elemento
+🐾 1 | Determine the frequency of each element
 
-Por exemplo, na frase "Quero conseguir um estágio", temos uma certa frequência de ocorrência de cada caractere, caso a gente queira compactar esse texto.
+For example, in the sentence "I want to get an internship", we have a certain frequency of occurrence for each character, if we want to compact this text.
 
-Nesse caso, temos:
+In this case, we have:
+
+<a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/frequency_table.png" alt="Frequency Table"></a>
 
 symbol  | frequency |
 ---|------|
@@ -78,8 +80,22 @@ symbol  | frequency |
 `a` | 1 |
 `g` | 2	|
 
+For this table to be generated, it was necessary to create 3 specific functions:
+
+The function "initializes_tab_with_zero" has the goal of making the table initialization from zero elements, considering that TAM equals 256.
+
+The function "fill_tab_frequency" receives both the characters (char) that are passed as a text array, as well as the amount of their frequency (int);
+
+The function "print_tab_frequency" takes the table generated in the previous function and prints it to the terminal. :) It was used as a test, basically.
+
+In the figure below, we can analyze how this table is generated in the output:
 
 
 
+
+
+🐾 2 | Montar uma árvore binária
+
+Nessa etapa, agrupamos os símbolos de acordo com a frequência.
 
 
