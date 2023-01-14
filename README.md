@@ -183,6 +183,10 @@ Join the string s2 to string s1 generating a new string.
 
 </details>
 
+In the figure below, we can analyze how this list is generated in the output:
+
+<a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/output_linked_list.png" alt="Output Linked List"></a>
+
 🐾 3 | Building the Huffman Tree
 
 Após a formação da nossa fila ou lista encadeada ordenada, partimos para a fase de montagem da nossa árvore binária. :) O que é muito legal quando é feita pela primeira vez! :D
