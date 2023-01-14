@@ -153,35 +153,36 @@ For example, by taking row 01 of the table, `w` with frequency 1, we can generat
 
 It has one pointer to the left and one to the right, and all nodes are exactly the same: it has one character and one frequency.
 
-The functions created for this step were:
+<details>
+  <summary>The functions created for this step were:</summary>
 
+* ```void criar_lista(Lista *lista);```
  /*
 Join the string s2 to string s1 generating a new string.
 @param[out] s1 The memory area to join to.
 @param[in]  s2  The memory area to copy from.
 */
-```void criar_lista(Lista *lista);```
 
+* ```void inserir_ordenado(Lista *lista, No *no);```
  /*
 Join the string s2 to string s1 generating a new string.
 @param[out] s1 The memory area to join to.
 @param[in]  s2  The memory area to copy from.
 */
-```void inserir_ordenado(Lista *lista, No *no);```
 
+* ```void preencher_lista(unsigned int tab[], Lista *lista);```
  /*
 Join the string s2 to string s1 generating a new string.
 @param[out] s1 The memory area to join to.
 @param[in]  s2  The memory area to copy from.
 */
-```void preencher_lista(unsigned int tab[], Lista *lista);```
 
+* ```void imprimir_lista(Lista *lista);```
  /*
 Join the string s2 to string s1 generating a new string.
 @param[out] s1 The memory area to join to.
 @param[in]  s2  The memory area to copy from.
 */
-```void imprimir_lista(Lista *lista);```
 
 🐾 3 | Building the Huffman Tree
 
