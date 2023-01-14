@@ -23,7 +23,7 @@ Short on time? You can check the [challenge subject 🥵](https://github.com/feg
 
 After reading the subject, I had an impression that it was a project similar to the creation of two programs - server and client - that communicate through signals (SIGUSR1 e SIGUSR2), [MiniTalk](https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/Minitalk_fgastal-.pdf). 
 
-<a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/minitalk-project.png" alt="Minitalk"></a>
+<a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/minitalk-program.png" alt="Minitalk"></a>
 
 However, the communication between the two programs in question - encoder and decoder - should be via [Shared Memory Operations](https://www.youtube.com/watch?v=a8tR6d47bCc), something I had not seen in the course of my studies, until then.
 
@@ -127,7 +127,7 @@ In this way, it is possible to generate the chained list of nodes of a binary tr
 
 For example, by taking row 01 of the table, `w` with frequency 1, we can generate this node below:
 
-<a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/node_linked_list.png" alt="Node Linked List"></a>
+<a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/linked_list_node.png" alt="Node Linked List"></a>
 
 It has one pointer to the left and one to the right, and all nodes are exactly the same: it has one character and one frequency.
 
