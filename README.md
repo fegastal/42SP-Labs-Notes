@@ -23,7 +23,7 @@ Short on time? You can check the [challenge subject 🥵](https://github.com/feg
 
 After reading the subject, I had an impression that it was a project similar to the creation of two programs - server and client - that communicate through signals (SIGUSR1 e SIGUSR2), [MiniTalk](https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/Minitalk_fgastal-.pdf). 
 
-<a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/Minitalk-Project.png" alt="Minitalk"></a>
+<a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/minitalk-project.png" alt="Minitalk"></a>
 
 However, the communication between the two programs in question - encoder and decoder - should be via [Shared Memory Operations](https://www.youtube.com/watch?v=a8tR6d47bCc), something I had not seen in the course of my studies, until then.
 
