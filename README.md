@@ -90,7 +90,6 @@ symbol  | frequency |
 
 <details>
   <summary>The functions created for this step were:</summary>
-For this table to be generated, it was necessary to create 3 specific functions:
 
 *```void initializes_tab_with_zero(unsigned int tab[])``` has the goal of making the table initialization from zero elements, considering that TAM equals 256.
  /*
@@ -185,4 +184,12 @@ Join the string s2 to string s1 generating a new string.
 </details>
 
 🐾 3 | Building the Huffman Tree
+
+Após a formação da nossa fila ou lista encadeada ordenada, partimos para a fase de montagem da nossa árvore binária. :) O que é muito legal quando é feita pela primeira vez! :D
+
+Em um primeiro momento, precisamos remover os dois primeiros elementos (nós) de MENOR frequência: no nosso caso, `w` e `o`. Em uma árvore binária, nós temos "folhas" (um nó que não possui nenhum filho), temos também "nós intermediários" que possuem sempre 2 filhos (quando o caminho se biforca) e a frequência desse nó específico é a soma da frequência de seus filhos.
+
+Parece complicado, mas na verdade é bem simples. Vamos lá:
+
+<a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/sum_leaf_frequency.png" alt="Sum of leaf frequency"></a>
 
