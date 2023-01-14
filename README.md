@@ -43,7 +43,7 @@ It is also important to say that, as a matter of strategy, my 42 Labs project ha
 
 > 2.1 Huffman's Tree 🌳
 
-In order to start studying data structures, I tried to understand how the Huffman Tree works. Based on the playlist indicated above, I was able to get a good understanding. :)
+In order to start studying data structures, I tried to understand how the Huffman's Tree works. Based on the playlist indicated above, I was able to get a good understanding. :)
 
 It is also important to say that my 42 Labs project had as its total practical focus the implementation step of these data structures.
 
@@ -56,6 +56,14 @@ With the Huffman Algorithm - proposed by David A. Huffman in 1952 during his doc
 ⚠️ What is so interesting about it? 
 
 It makes use of several data structures, such as table, chained list or priority queue, and binary tree. :D It's a lot!
+
+To get an idea of the final product, the figure below illustrates what a Binary Tree would look like. To generate the nodes we need to string these values together in a row or list:
+
+<a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/binary_tree.png" alt="Binary Tree"></a>
+
+Note that recursion is required to implement this tree, because we don't know how many nodes will be created. It is also important to note: is the next number less than or greater than/equal to the previous one? 
+
+Each character (1 char) has 8 bits (1 byte) to be represented. Using the [ASCII table](https://www.ime.usp.br/~pf/algoritmos/apend/ascii.html), we can note that in the string "I want to get an internship", the value of the character "I" in binary would be 01001001, of "W" would be 01010111 and so on. This 27-character (or symbol) string contains 27 * 8 bits = 216 bits. With the binary tree, this total amount of bits can be reduced a lot! 🌈
 
 So we need to focus on the coding steps:
 
@@ -92,7 +100,7 @@ In the figure below, we can analyze how this table is generated in the output:
 
 <a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/frequency_table.png" alt="Frequency Table"></a>
 
-🐾 2 | Building a Binary Tree
+🐾 2 | Sorted Linked List
 
 After going through our text relying on a frequency table for each element that occurs in our text, in this step we group the symbols according to frequency. 
 
@@ -100,11 +108,8 @@ Once we already have this frequency table, it will originate a list or a priorit
 
 So I need the frequency of each symbol/character to be able to assemble my binary tree. It's intended to make the structure orderly without having to reorder it for faster searching.
 
-<a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/binary_tree.png" alt="Binary Tree"></a>
 
-Note that recursion is required to implement this tree, because we don't know how many nodes will be created. It is also important to note: is the next number less than or greater than/equal to the previous one? 
 
-Each character (1 char) has 8 bits (1 byte) to be represented. Using the [ASCII table](https://www.ime.usp.br/~pf/algorithms/apend/ascii.html), we can note that in the string "I want to get an internship", the value of the character "I" in binary would be 01001001, of "W" would be 01010111 and so on. This 27-character (or symbol) string contains 27 * 8 bits = 216 bits. With the binary tree, this total amount of bits can be reduced a lot! 🌈
 
 
 
