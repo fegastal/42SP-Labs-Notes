@@ -35,6 +35,8 @@ In order to understand these new concepts and map out the new challenges ahead o
 
 These two references were essential to give continuity to the challenge, which was to be delivered in 6 days. 🤯
 
+It is also important to say that, as a matter of strategy, my 42 Labs project had as its total practical focus the implementation step of these data structures - mainly the binary tree - in order to consolidate well the knowledge. The project is very extensive, involves the study of many new concepts, and therefore it was necessary to establish an order of priority in this regard.
+
 ---
 
 - **Phase 2 - Data Structures 🕸**
@@ -45,7 +47,7 @@ In order to start studying data structures, I tried to understand how the Huffma
 
 It is also important to say that my 42 Labs project had as its total practical focus the implementation step of these data structures.
 
-Basically, when we have files - be it images, video, audio or text - that occupy a large amount of memory because they are heavy, we have the possibility to compress them - it can be by winrar, 7zip or any other software.
+Basically, when we have files - be it images, video, audio or text - that occupy a large amount of memory because they are heavy, we have the possibility to compress them - it can be by WinRar, 7zip or any other software.
 
 In this sense, pixel points with very similar colors can be converted into one color, decreasing the file size, for example.
 
