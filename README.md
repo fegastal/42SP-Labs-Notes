@@ -102,6 +102,7 @@ So I need the frequency of each symbol/character to be able to assemble my binar
 
 <a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/binary_tree.png" alt="Binary Tree"></a>
 
-Nota-se que é necessária a recursividade para a implementação dessa árvore, porque não sabemos quantos nós serão criados. É importante notar também: o próximo número é menor ou maior / igual que o anterior? (: 
+Note that recursion is required to implement this tree, because we don't know how many nodes will be created. It is also important to note: is the next number less than or greater than/equal to the previous one? 
 
-Cada caractere (1 char) possui 8 bits (1 byte) para serem representados. Utilizando a tabela ASCII, 
+Each character (1 char) has 8 bits (1 byte) to be represented. Using the [ASCII table](https://www.ime.usp.br/~pf/algorithms/apend/ascii.html), we can note that in the string "I want to get an internship", the value of I in binary would be 01001001, of W would be 01010111 and so on. This 27-character (or symbol) string contains 27 * 8 bits = 216 bits. With the binary tree, this total amount of bits can be reduced a lot! :D
+
