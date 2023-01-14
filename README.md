@@ -43,6 +43,8 @@ These two references were essential to give continuity to the challenge, which w
 
 In order to start studying data structures, I tried to understand how the Huffman Tree works. Based on the playlist indicated above, I was able to get a good understanding. :)
 
+It is also important to say that my 42 Labs project had as its total practical focus the implementation step of these data structures.
+
 Basically, when we have files - be it images, video, audio or text - that occupy a large amount of memory because they are heavy, we have the possibility to compress them - it can be by winrar, 7zip or any other software.
 
 In this sense, pixel points with very similar colors can be converted into one color, decreasing the file size, for example.
@@ -63,20 +65,18 @@ In this case, we have:
 
 symbol  | frequency |
 ---|------|
-`q` | 1	|
-`u` | 3	|
+`i` | 3	|
+`w` | 1	|
+`a` | 2 |
+`n` | 3 |
+`t` | 4 |
+`o` | 1	|
+`g` | 1 |
 `e` | 2 |
-`r` | 2 |
-`o` | 3 |
-`c` | 1	|
-`n` | 1 |
-`s` | 2 |
-`i` | 2 |
-` ` | 3 |
-`m` | 1	|
-`t` | 1 |
-`a` | 1 |
-`g` | 2	|
+`p` | 1 |
+` ` | 5 |
+`r` | 1	|
+`s` | 1 |
 
 For this table to be generated, it was necessary to create 3 specific functions:
 
@@ -90,8 +90,12 @@ In the figure below, we can analyze how this table is generated in the output:
 
 <a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/frequency_table.png" alt="Frequency Table"></a>
 
-🐾 2 | Montar uma árvore binária
+🐾 2 | Building a Binary Tree
 
-Nessa etapa, agrupamos os símbolos de acordo com a frequência.
+After going through our text relying on a frequency table for each element that occurs in our text, in this step we group the symbols according to frequency. 
 
+Once we already have this frequency table, it will originate a list or a priority queue, and from this queue we will remove the elements and we will assemble our binary tree, grouping the symbols according to frequency.
 
+So I need the frequency of each symbol/character to be able to assemble my binary tree. It's intended to make the structure orderly without having to reorder it for faster searching.
+
+<a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/binary_tree.png" alt="Binary Tree"></a>
