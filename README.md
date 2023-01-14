@@ -102,11 +102,38 @@ In the figure below, we can analyze how this table is generated in the output:
 
 🐾 2 | Sorted Linked List
 
-After going through our text relying on a frequency table for each element that occurs in our text, in this step we group the symbols according to frequency. 
+After going through our text and once we already have this frequency table, it will originate a list or a priority row, and from this row we will remove the elements and assemble our binary tree, grouping the symbols according to frequency in increasing or decreasing order.
 
-Once we already have this frequency table, it will originate a list or a priority queue, and from this queue we will remove the elements and we will assemble our binary tree, grouping the symbols according to frequency.
+We need to be careful about this, because if we order the table in ascending order, when we remove the elements from the list, they will be removed from the beginning and we need to always remove the elements with the lowest frequency.
 
-So I need the frequency of each symbol/character to be able to assemble my binary tree. It's intended to make the structure orderly without having to reorder it for faster searching.
+Sorting the previous sentence in ascending order, we have: 
+
+symbol  | frequency |
+---|------|
+
+`w` | 1	|
+`o` | 1	|
+`g` | 1 |
+`p` | 1 |
+`r` | 1	|
+`s` | 1 |
+`a` | 2 |
+`e` | 2 |
+`i` | 3	|
+`n` | 3 |
+`t` | 4 |
+` ` | 5 |
+
+In this way, it is possible to generate the chained list of nodes of a binary tree. 🚀
+
+For example, by taking row 01 of the table, `w` with frequency 1, we can generate this node below:
+
+<a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/node_linked_list.png" alt="Node Linked List"></a>
+
+It has one pointer to the left and one to the right, and all nodes are exactly the same: it has one character and one frequency.
+
+
+
 
 
 
