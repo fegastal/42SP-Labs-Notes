@@ -88,9 +88,7 @@ The function "print_tab_frequency" takes the table generated in the previous fun
 
 In the figure below, we can analyze how this table is generated in the output:
 
-
-
-
+<a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/frequency_table.png" alt="Frequency Table"></a>
 
 🐾 2 | Montar uma árvore binária
 
