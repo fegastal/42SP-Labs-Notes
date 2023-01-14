@@ -82,11 +82,11 @@ symbol  | frequency |
 
 For this table to be generated, it was necessary to create 3 specific functions:
 
-The function "initializes_tab_with_zero" has the goal of making the table initialization from zero elements, considering that TAM equals 256.
+The function ```initializes_tab_with_zero``` has the goal of making the table initialization from zero elements, considering that TAM equals 256.
 
-The function "fill_tab_frequency" receives both the characters (char) that are passed as a text array, as well as the amount of their frequency (int);
+The function ```fill_tab_frequency``` receives both the characters (char) that are passed as a text array, as well as the amount of their frequency (int);
 
-The function "print_tab_frequency" takes the table generated in the previous function and prints it to the terminal. :) It was used as a test, basically.
+The function ```print_tab_frequency``` takes the table generated in the previous function and prints it to the terminal. :) It was used as a test, basically.
 
 In the figure below, we can analyze how this table is generated in the output:
 
@@ -104,5 +104,7 @@ So I need the frequency of each symbol/character to be able to assemble my binar
 
 Note that recursion is required to implement this tree, because we don't know how many nodes will be created. It is also important to note: is the next number less than or greater than/equal to the previous one? 
 
-Each character (1 char) has 8 bits (1 byte) to be represented. Using the [ASCII table](https://www.ime.usp.br/~pf/algorithms/apend/ascii.html), we can note that in the string "I want to get an internship", the value of I in binary would be 01001001, of W would be 01010111 and so on. This 27-character (or symbol) string contains 27 * 8 bits = 216 bits. With the binary tree, this total amount of bits can be reduced a lot! :D
+Each character (1 char) has 8 bits (1 byte) to be represented. Using the [ASCII table](https://www.ime.usp.br/~pf/algorithms/apend/ascii.html), we can note that in the string "I want to get an internship", the value of the character "I" in binary would be 01001001, of "W" would be 01010111 and so on. This 27-character (or symbol) string contains 27 * 8 bits = 216 bits. With the binary tree, this total amount of bits can be reduced a lot! 🌈
+
+
 
