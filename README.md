@@ -17,6 +17,8 @@ It provides a very important stage in the life of a cadet, since it is the first
 
 Short on time? You can check the [challenge subject 🥵](https://github.com/fegastal/42SP-Labs-Notes/blob/main/SUBJECT.md)!
 
+---
+
 - **Phase 1 - Initial Studies 📚**
 
 After reading the subject, I had an impression that it was a project similar to the creation of two programs - server and client - that communicate through signals (SIGUSR1 e SIGUSR2), [MiniTalk](https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/Minitalk_fgastal-.pdf). 
@@ -32,6 +34,8 @@ In order to understand these new concepts and map out the new challenges ahead o
 > And this book: [Mastering Algorithms with C - Useful Techniques from Sorting to Encryption](https://www.amazon.com.br/Mastering-Algorithms-C-Kyle-Loudon/dp/1565924533)
 
 These two references were essential to give continuity to the challenge, which was to be delivered in 6 days.🤯
+
+---
 
 - **Phase 2 - Data Structures 🕸**
 
