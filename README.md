@@ -33,13 +33,13 @@ In order to understand these new concepts and map out the new challenges ahead o
 
 > And this book: [Mastering Algorithms with C - Useful Techniques from Sorting to Encryption](https://www.amazon.com.br/Mastering-Algorithms-C-Kyle-Loudon/dp/1565924533)
 
-These two references were essential to give continuity to the challenge, which was to be delivered in 6 days.🤯
+These two references were essential to give continuity to the challenge, which was to be delivered in 6 days. 🤯
 
 ---
 
 - **Phase 2 - Data Structures 🕸**
 
-> 2.1 Huffman's Tree
+> 2.1 Huffman's Tree 🌳
 
 In order to start studying data structures, I tried to understand how the Huffman Tree works. Based on the playlist indicated above, I was able to get a good understanding. :)
 
@@ -51,9 +51,34 @@ With the Huffman Algorithm - proposed by David A. Huffman in 1952 during his doc
 
 ⚠️ What is so interesting about it? 
 
-It makes use of several data structures, such as table, chained list or priority queue, and binary tree. :D It is a lot!
+It makes use of several data structures, such as table, chained list or priority queue, and binary tree. :D It's a lot!
 
-So we need to focus on steps.
+So we need to focus on the coding steps:
+
+🐾 1 | Determinar a frequência de cada elemento
+
+Por exemplo, na frase "Quero conseguir um estágio", temos uma certa frequência de ocorrência de cada caractere, caso a gente queira compactar esse texto.
+
+Nesse caso, temos:
+
+symbol  | frequency |
+---|------|
+`q` | 1	|
+`u` | 3	|
+`e` | 2 |
+`r` | 2 |
+`o` | 3 |
+`c` | 1	|
+`n` | 1 |
+`s` | 2 |
+`i` | 2 |
+` ` | 3 |
+`m` | 1	|
+`t` | 1 |
+`a` | 1 |
+`g` | 2	|
+
+
 
 
 
