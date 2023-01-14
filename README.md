@@ -110,7 +110,6 @@ Sorting the previous sentence in ascending order, we have:
 
 symbol  | frequency |
 ---|------|
-
 `w` | 1	|
 `o` | 1	|
 `g` | 1 |
