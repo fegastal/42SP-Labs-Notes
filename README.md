@@ -26,6 +26,12 @@ Short on time? You can check the [challenge subject 🥵](https://github.com/feg
 
 ---
 
+## Schedule according to the project objective
+
+It is also important to say that, as a matter of strategy, my 42 Labs project had as its total practical focus the implementation step of these data structures - mainly the binary tree - in order to consolidate well the knowledge. The project is very extensive, involves the study of many new concepts, and therefore it was necessary to establish an order of priority in this regard.
+
+---
+
 ## Phase 1 - Initial Studies 📚
 
 After reading the subject, I had an impression that it was a project similar to the creation of two programs - server and client - that communicate through signals (SIGUSR1 e SIGUSR2), [MiniTalk](https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/Minitalk_fgastal-.pdf). 
@@ -41,8 +47,6 @@ In order to understand these new concepts and map out the new challenges ahead o
 > And this book: [Mastering Algorithms with C - Useful Techniques from Sorting to Encryption](https://www.amazon.com.br/Mastering-Algorithms-C-Kyle-Loudon/dp/1565924533)
 
 These two references were essential to give continuity to the challenge, which was to be delivered in 6 days. 🤯
-
-It is also important to say that, as a matter of strategy, my 42 Labs project had as its total practical focus the implementation step of these data structures - mainly the binary tree - in order to consolidate well the knowledge. The project is very extensive, involves the study of many new concepts, and therefore it was necessary to establish an order of priority in this regard.
 
 ---
 
@@ -379,10 +383,25 @@ Join the string s2 to string s1 generating a new string.
 
 🐾 7 | Creating a compressed file (texto.txt)
 
-🐾 8 | Decompressing the archive
+🐾 8 | Decompressing the file (texto.txt)
 
 ---
 
+> 2.2 Map
+
+---
+
+## Sharing Memory
+
+---
 ## Cadet contributors
+
+A very special thanks to all the cadets who helped me in any way throughout the project, including the company in the labs' study chats. 💜
+
+Sheela | @sguilher
+Fernanda Fahl | @feralves
+Erick | @eandre-f
+Átila | @acosta-a
+Lucas Queiroz | @lsilva-q
 
 ---
