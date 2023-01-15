@@ -402,10 +402,10 @@ Join the string s2 to string s1 generating a new string.
 
 A very special thanks to all the cadets who helped me in any way throughout the project, including the company in the labs' study chats. 💜
 
-Sheela | @sguilher
-Fernanda Fahl | @feralves
-Erick | @eandre-f
-Átila | @acosta-a
-Lucas Queiroz | @lsilva-q
+Sheela @sguilher | 
+Fernanda Fahl @feralves | 
+Erick @eandre-f | 
+Átila @acosta-a | 
+Lucas Queiroz @lsilva-q
 
 ---
