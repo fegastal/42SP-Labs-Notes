@@ -229,5 +229,33 @@ Therefore, it is necessary to repeat the process - now with `g` and `p` - until 
 <a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/binary_tree_process_10.png" alt="Sum of leaf frequency"></a>
 <a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/binary_tree_process_11.png" alt="Sum of leaf frequency"></a>
 
-In the image above, you can see that when we go to a path to the left, we get the binary value 0. If we go to the right, we get the value 1. Therefore, to get to char "R", we get the binary value 0100, which is 4 bits. This implies that if we were to use the ASCII table to determine its value in binary, we would arrive at the value 01010010, which is 8 bits. Therefore, using the binary tree, we can use fewer bits to arrive at a desired character value. :)
+🐾 4 | Encoding 🔒
+
+In the image above, you can see that when we go to a path to the left, we get the binary value 0, this is a convention of Huffman's Law. If we go to the right, we get the value 1. Therefore, to get to char "R", we get the binary value 0100, which is 4 bits. This implies that if we were to use the ASCII table to determine its value in binary, we would arrive at the value 01010010, which is 8 bits. Therefore, using the binary tree, we can use fewer bits to arrive at a desired character value. 🔎
+
+The coding step is just that. :) Reading the binary tree from its root, we go through it until we find the character "R" that is equivalent to 0100 in binary. So, after going through it completely, we need to generate a table with our new codes for each character according to its frequency.
+
+Essa tabela será chamada de dicionário! 📖🔮
+
+Para montá-lo, precisamos percorrer a nossa árvore completa do início ao fim de forma recursiva (importante), começando pela raiz e vamos sempre para a esquerda, até chegar em uma folha. Fazemos isso percorrendo toda a árvore até preencher toda a nossa tabela de dicionário.
+
+Utilizando-se novamente a string "I want to get an internship", sabe-se que indo pela tabela ASCII, precisaríamos de 27 * 8 = 216 bits para codificar essa frase. Através da árvore binária, precisamos de:
+
+symbol  | frequency | encoding
+---|------|------|
+`w` | 1	| 11100
+`o` | 1	| 11101
+`g` | 1 | 11110
+`p` | 1 | 11111
+`r` | 1	| 0100
+`s` | 1 | 0101
+`a` | 2 | 1100
+`e` | 2 | 1101
+`i` | 3	| 011
+`n` | 3 | 100
+`t` | 4 | 101
+` ` | 5 | 00
+
+<a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/dictionary.png" alt="Dictionary"></a>
+
 
