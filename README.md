@@ -24,9 +24,9 @@ Short on time? You can check the [challenge subject 🥵](https://github.com/feg
 
 ## Tools used
 
-The technologies I used throughout the execution of the project were Visual Studio Code for code development, Github for code versioning, Discord for community contact and a very important tool for the development of the code flow was Mic. :) I use it for project defense in evaluations as well, so I feel very comfortable in the environment.
+The technologies I used throughout the execution of the project were [Visual Studio Code](https://code.visualstudio.com/) for code development, [Github](https://github.com/) for code versioning, [Discord](https://discord.com/) for community contact and a very important tool for the development of the code flow was [Miro](https://miro.com/). :) I use it for project defense in evaluations as well, so I feel very comfortable in the environment.
 
-I really like to use flows, post-it notes and I have a notebook full of information about the subjects discussed here. 🔮
+I really like to use flows, post-it notes and I have a notebook full of information about the subjects discussed here. 🔮 If you click on the links to the [Minitalk](https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/Minitalk_fgastal-.pdf) and [Push Swap](https://miro.com/app/board/uXjVPG5JxXA=/?share_link_id=610858182881) projects, for example, you can see that it's a standard around here :) I really like schematics, planning and color in the development process.
 
 ---
 
@@ -34,7 +34,9 @@ I really like to use flows, post-it notes and I have a notebook full of informat
 
 It is also important to say that, as a matter of strategy, my 42 Labs project had as its total practical focus the implementation step of these data structures - mainly the binary tree - in order to consolidate well the knowledge. The project is very extensive, involves the study of many new concepts, and therefore it was necessary to establish an order of priority in this regard.
 
-In this sense, at the moment the project compresses and decompresses a text in encoded .txt format. However, there is no presence of two programs separately - encoder and decoder - and there was the study of the shared memory part, however it was not possible to implement it.
+In this sense, it was necessary to make a study schedule during the week of the challenge that encompassed both the Labs project and the Minishell, since the latter is in pairs and mine had not signed up for Labs. Therefore, only I would be entitled to o2, so in order not to jeopardize it, I decided to take both projects in parallel, dedicating my afternoon and evening periods to Labs. 
+
+In this sense, at the moment the project compresses and decompresses a text in encoded .txt format. However, there is no presence of two programs separately - ```encoder and decoder``` - and there was the study of the shared memory part, however it was not possible to implement it.
 
 However, despite the time limit for the challenge, the project will continue to be implemented until the remaining parts requested by the subject are completed. 👾
 
@@ -46,7 +48,7 @@ After reading the subject, I had an impression that it was a project similar to 
 
 <a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/minitalk-program.png" alt="Minitalk"></a>
 
-However, the communication between the two programs in question - encoder and decoder - should be via [Shared Memory Operations](https://www.youtube.com/watch?v=a8tR6d47bCc), something I had not seen in the course of my studies, until then.
+However, the communication between the two programs in question - ```encoder and decoder``` - should be via [Shared Memory Operations](https://www.youtube.com/watch?v=a8tR6d47bCc), something I had not seen in the course of my studies, until then.
 
 In order to understand these new concepts and map out the new challenges ahead of me, I chose to follow initial references on the topic, such as:
 
