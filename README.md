@@ -30,6 +30,10 @@ Short on time? You can check the [challenge subject 🥵](https://github.com/feg
 
 It is also important to say that, as a matter of strategy, my 42 Labs project had as its total practical focus the implementation step of these data structures - mainly the binary tree - in order to consolidate well the knowledge. The project is very extensive, involves the study of many new concepts, and therefore it was necessary to establish an order of priority in this regard.
 
+In this sense, at the moment the project compresses and decompresses a text in encoded .txt format. However, there is no presence of two programs separately - encoder and decoder - and there was the study of the shared memory part, however it was not possible to implement it.
+
+However, despite the time limit for the challenge, the project will continue to be implemented until the remaining parts requested by the subject are completed. 👾
+
 ---
 
 ## Phase 1 - Initial Studies 📚
