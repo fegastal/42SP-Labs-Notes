@@ -24,6 +24,10 @@ Short on time? You can check the [challenge subject 🥵](https://github.com/feg
 
 ## Tools used
 
+The technologies I used throughout the execution of the project were Visual Studio Code for code development, Github for code versioning, Discord for community contact and a very important tool for the development of the code flow was Mic. :) I use it for project defense in evaluations as well, so I feel very comfortable in the environment.
+
+I really like to use flows, post-it notes and I have a notebook full of information about the subjects discussed here. 🔮
+
 ---
 
 ## Schedule according to the project objective
