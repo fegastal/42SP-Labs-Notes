@@ -262,7 +262,7 @@ Join the string s2 to string s1 generating a new string.
 
 </details>
 
-🐾 4 | Encoding 🔒
+🐾 4 | Dictionary 📖🔮
 
 In the image above, you can see that when we go to a path to the left, we get the binary value 0, this is a convention of Huffman's Law. If we go to the right, we get the value 1. Therefore, to get to char "R", we get the binary value 0100, which is 4 bits. This implies that if we were to use the ASCII table to determine its value in binary, we would arrive at the value 01010010, which is 8 bits. Therefore, using the binary tree, we can use fewer bits to arrive at a desired character value. 🔎
 
@@ -337,6 +337,19 @@ Join the string s2 to string s1 generating a new string.
 */
 </details>
 
+🐾 5 | Encoding 🔒
+
+<details>
+  <summary>The functions created for this step were:</summary>
+
+* ```char* encode(char ** dictionary, unsigned char *text);```
+ /*
+Join the string s2 to string s1 generating a new string.
+@param[out] s1 The memory area to join to.
+@param[in]  s2  The memory area to copy from.
+*/
+</details>
+
 🐾 5 | Decoding 🔓
 
 Decoding is the reverse process of the above. :) That is, we have the sequence of bits, for example:
@@ -357,3 +370,4 @@ Join the string s2 to string s1 generating a new string.
 @param[in]  s2  The memory area to copy from.
 */
 </details>
+
