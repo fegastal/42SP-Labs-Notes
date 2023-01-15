@@ -11,6 +11,18 @@
 
 
 * [Introduction](#introduction)
+* [Tools Used](#tools_used)
+* [Schedule](#schedule)
+* [Overall Project Objective](#compile)
+* [How to compile the project?](#overall)
+* [Phase 1 - Initial Studies](#initial_studies)
+* [Phase 2 - Data Structures](#data_structures)
+* [Phase 2 - Map](#map)
+* [Phase 3 - Sharing Memory](#sharing_memory)
+* [Cadet contributors](#contributors)
+
+
+<div id='introduction'/>
 
 ## Introduction 📍
 
@@ -21,6 +33,8 @@ It provides a very important stage in the life of a cadet, since it is the first
 Short on time? You can check the [challenge subject 🥵](https://github.com/fegastal/42SP-Labs-Notes/blob/main/SUBJECT.md)!
 
 ---
+
+<div id='tools_used'/>
 
 ## Tools used 🛠
 
@@ -35,6 +49,8 @@ One part that I made sure to focus on throughout the process is to make better n
 
 ---
 
+<div id='schedule'/>
+
 ## Schedule according to the project objective 🗓
 
 It is also important to say that, as a matter of strategy, my 42 Labs project had as its total practical focus the implementation step of these data structures - mainly the binary tree - in order to consolidate well the knowledge. The project is very extensive, involves the study of many new concepts, and therefore it was necessary to establish an order of priority in this regard.
@@ -47,6 +63,8 @@ However, despite the time limit for the challenge, the project will continue to 
 
 ---
 
+<div id='overall'/>
+
 ## Overall Project Objective ✏️ 
 
 Although I did not implement it in code, throughout the development process I tried to talk to several cadets who were working at a faster pace than me and who had a sense of the project as a whole.
@@ -58,6 +76,8 @@ I tried, therefore, to study the main concepts and make a summary of what the pr
 One of the cadets I noticed a rapid development of the project, for example, was @ralves-b. Based on his [Labs repository](https://github.com/rodrigo-br/42Labs), I could get a very good idea about the parts of the project in general. :) I recommend him to whoever else is interested.
 
 ---
+
+<div id='compile'/>
 
 ## How to compile the project? 🚀
 
@@ -72,6 +92,8 @@ Finally, you can type: ```./decoder``` or ```./encoder``` in the terminal.
 It is important to stress that the ideal would be to have two programs running from shared memory, but since I have not been able to achieve this successfully, I have only one file called "main.c" that contains all the contents of my program. 
 
 ---
+
+<div id='initial_studies'/>
 
 ## Phase 1 - Initial Studies 📚
 
@@ -90,6 +112,8 @@ In order to understand these new concepts and map out the new challenges ahead o
 These two references were essential to give continuity to the challenge, which was to be delivered in 6 days. 🤯
 
 ---
+
+<div id='data_structures'/>
 
 ## Phase 2 - Data Structures 🕸
 
@@ -454,6 +478,8 @@ Reviewing these concepts was very important in order to implement the compressio
 
 ---
 
+<div id='map'/>
+
 > 2.2 Map
 
 Next structure to be created is a [map of the symbols and their respective codes](https://www.geeksforgeeks.org/which-data-structure-is-used-by-map/). Since in a tree, the paths from the root to any of the leaves (Nodes where the two descendants, left and right, are null) are unique, the encoding and decoding of the codes always have an associated tree.
@@ -467,6 +493,8 @@ According to the link above:
 <a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/red_black_tree.png" alt="Red Black Tree"></a>
 
 ---
+
+<div id='sharing_memory'/>
 
 ## Phase 3 - Sharing Memory 🤝
 
@@ -482,6 +510,9 @@ The figure below was made based on the studies of cadet @eandre-f. 🤓 Here, yo
 <a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/shared_memory_operations_2.png" alt="Shared Memory Operations"></a>
 
 ---
+
+<div id='contributors'/>
+
 ## Cadet contributors
 
 A very special thanks to all the cadets who helped me in any way throughout the project, including the company in the labs' study chats. 💜
