@@ -235,11 +235,11 @@ In the image above, you can see that when we go to a path to the left, we get th
 
 The coding step is just that. :) Reading the binary tree from its root, we go through it until we find the character "R" that is equivalent to 0100 in binary. So, after going through it completely, we need to generate a table with our new codes for each character according to its frequency.
 
-Essa tabela será chamada de dicionário! 📖🔮
+This table will be called a dictionary! 📖🔮
 
-Para montá-lo, precisamos percorrer a nossa árvore completa do início ao fim de forma recursiva (importante), começando pela raiz e vamos sempre para a esquerda, até chegar em uma folha. Fazemos isso percorrendo toda a árvore até preencher toda a nossa tabela de dicionário.
+To assemble it, we need to go through our entire tree from start to finish in a recursive (important) manner, starting at the root and going always to the left, until we reach a leaf. We do this by traversing the entire tree until we have filled our entire dictionary table.
 
-Utilizando-se novamente a string "I want to get an internship", sabe-se que indo pela tabela ASCII, precisaríamos de 27 * 8 = 216 bits para codificar essa frase. Através da árvore binária, precisamos de:
+Using again the string "I want to get an internship", we know that going by the ASCII table, we would need 27 * 8 = 216 bits to encode this sentence. Using the binary tree, we need:
 
 symbol  | frequency | encoding
 ---|------|------|
