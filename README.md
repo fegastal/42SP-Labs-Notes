@@ -12,7 +12,7 @@
 
 * [Introduction](#introduction)
 
-## Introduction
+## Introduction 📍
 
 The Labs project at school [42 São Paulo](https://www.42sp.org.br/) has the proposal that interested students develop a proposed challenge in order to get a 6-month experience in some of the partner companies.
 
@@ -22,23 +22,54 @@ Short on time? You can check the [challenge subject 🥵](https://github.com/feg
 
 ---
 
-## Tools used
+## Tools used 🛠
 
 The technologies I used throughout the execution of the project were [Visual Studio Code](https://code.visualstudio.com/) for code development, [Github](https://github.com/) for code versioning, [Discord](https://discord.com/) for community contact and a very important tool for the development of the code flow was [Miro](https://miro.com/). :) I use it for project defense in evaluations as well, so I feel very comfortable in the environment.
 
-I really like to use flows, post-it notes and I have a notebook full of information about the subjects discussed here. 🔮 If you click on the links to the [Minitalk](https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/Minitalk_fgastal-.pdf) and [Push Swap](https://miro.com/app/board/uXjVPG5JxXA=/?share_link_id=610858182881) projects, for example, you can see that it's a standard around here :) I really like schematics, planning and color in the development process.
+I really like to use flows, post-it notes and I have a notebook full of information about the subjects discussed here. 🔮 If you click on the links to the [So_Long](https://miro.com/app/board/uXjVPcf9kOE=/?share_link_id=328504592650), [Minitalk](https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/Minitalk_fgastal-.pdf) and [Push Swap](https://miro.com/app/board/uXjVPG5JxXA=/?share_link_id=610858182881) projects, for example, you can see that it's a standard around here :) I really like schematics, planning and color in the development process.
+
+<a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/flow_project_so_long.png" alt="Flow Project So Long"></a>
+<a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/flow_project_so_long_2.png" alt="Flow Project So Long"></a>
+
+One part that I made sure to focus on throughout the process is to make better named commits, work well on the issue of code versioning on github and, mainly, I discovered through the cadet @acosta-a the [code documentation with Doxygen](https://wiki.scilab.org/Doxygen%20documentation%20Examples). It's something I had seen recurrently in some projects but had never stopped to try to do. :) Very good tip and I'll take it to my other projects too!
 
 ---
 
-## Schedule according to the project objective
+## Schedule according to the project objective 🗓
 
 It is also important to say that, as a matter of strategy, my 42 Labs project had as its total practical focus the implementation step of these data structures - mainly the binary tree - in order to consolidate well the knowledge. The project is very extensive, involves the study of many new concepts, and therefore it was necessary to establish an order of priority in this regard.
 
 In this sense, it was necessary to make a study schedule during the week of the challenge that encompassed both the Labs project and the Minishell, since the latter is in pairs and mine had not signed up for Labs. Therefore, only I would be entitled to o2, so in order not to jeopardize it, I decided to take both projects in parallel, dedicating my afternoon and evening periods to Labs. 
 
-In this sense, at the moment the project compresses and decompresses a text in encoded .txt format. However, there is no presence of two programs separately - ```encoder and decoder``` - and there was the study of the shared memory part, however it was not possible to implement it.
+At the moment the project compresses and decompresses a text in encoded .txt format. However, there is no presence of two programs separately - ```encoder and decoder``` - and there was the study of the "Shared Memory" and "Map" part, however it was not possible to implement it (not yet).
 
 However, despite the time limit for the challenge, the project will continue to be implemented until the remaining parts requested by the subject are completed. 👾
+
+---
+
+## Overall Project Objective ✏️ 
+
+Although I did not implement it in code, throughout the development process I tried to talk to several cadets who were working at a faster pace than me and who had a sense of the project as a whole.
+
+I tried, therefore, to study the main concepts and make a summary of what the project would be in its entirety. The flowchart below was made based on what was discussed during the Labs chat and from the content that cadet @eandre-f - who helped me a lot 💜 - shared with us. 
+
+<a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/flow_project.png" alt="Flow Project"></a>
+
+One of the cadets I noticed a rapid development of the project, for example, was @ralves-b. Based on his [Labs repository](https://github.com/rodrigo-br/42Labs), I could get a very good idea about the parts of the project in general. :) I recommend him to whoever else is interested.
+
+---
+
+## How to compile the project? 🚀
+
+First, you need to clone my repository into a directory of your choice on your computer:
+
+```git clone https://github.com/42sp/42labs-selection-process-v4-fegastal.git```
+
+Then you can enter this folder and type ```make``` in your terminal. This will generate the .o (objects) files and our .a executable.
+
+Finally, you can type: ```./decoder``` or ```./encoder``` in the terminal. 
+
+It is important to stress that the ideal would be to have two programs running from shared memory, but since I have not been able to achieve this successfully, I have only one file called "main.c" that contains all the contents of my program. 
 
 ---
 
@@ -430,15 +461,27 @@ Next structure to be created is a map of the symbols and their respective codes.
 
 ## Sharing Memory
 
+<a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/shared_memory_operations.png" alt="Shared Memory Operations"></a>
+
 ---
 ## Cadet contributors
 
 A very special thanks to all the cadets who helped me in any way throughout the project, including the company in the labs' study chats. 💜
 
-Sheela @sguilher | 
-Fernanda Fahl @feralves | 
-Erick @eandre-f | 
-Átila @acosta-a | 
-Lucas Queiroz @lsilva-q
+Átila @acosta-a |
+Beatriz @bede-car |
+Emmanuel @etomiyos |
+Erick @eandre-f |
+Fernanda Fahl @feralves |
+Gabriel @gasouza |
+Joana @jvidon-n |
+Jeferson @jgiacomo |
+Lucas Queiroz @lsilva-q |
+Mayara @macarval |
+Raphael @rarobert |
+Ricardo @ryoshio |
+Sheela @sguilher
+
+The feeling was that I had made the "piscina" again! (: the project was very challenging, it made me question, rethink my trajectory at 42. Having you by my side in this made all the difference! Thank you. 🎈
 
 ---
