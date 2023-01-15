@@ -393,6 +393,8 @@ Join the string s2 to string s1 generating a new string.
 
 > 2.2 Map
 
+Next structure to be created is a map of the symbols and their respective codes. Since in a tree, the paths from the root to any of the leaves (Nodes where the two descendants, left and right, are null) are unique, the encoding and decoding of the codes always have an associated tree.
+
 ---
 
 ## Sharing Memory
