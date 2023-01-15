@@ -22,6 +22,10 @@ Short on time? You can check the [challenge subject 🥵](https://github.com/feg
 
 ---
 
+## Tools used
+
+---
+
 ## Phase 1 - Initial Studies 📚
 
 After reading the subject, I had an impression that it was a project similar to the creation of two programs - server and client - that communicate through signals (SIGUSR1 e SIGUSR2), [MiniTalk](https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/Minitalk_fgastal-.pdf). 
@@ -377,3 +381,8 @@ Join the string s2 to string s1 generating a new string.
 
 🐾 8 | Decompressing the archive
 
+---
+
+## Cadet contributors
+
+---
