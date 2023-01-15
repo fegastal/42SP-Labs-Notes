@@ -9,6 +9,9 @@
 
 > You can find me through [my discord](https://discord.gg/7QrbMzuT), my [email](mailto:fernanda.gastal.figueiredo@alumni.usp.br) or [LinkedIn](https://www.linkedin.com/in/fernandagastal/). :)
 
+
+* [Introduction](#introduction)
+
 ## Introduction
 
 The Labs project at school [42 São Paulo](https://www.42sp.org.br/) has the proposal that interested students develop a proposed challenge in order to get a 6-month experience in some of the partner companies.
@@ -19,7 +22,7 @@ Short on time? You can check the [challenge subject 🥵](https://github.com/feg
 
 ---
 
-- **Phase 1 - Initial Studies 📚**
+**Phase 1 - Initial Studies 📚**
 
 After reading the subject, I had an impression that it was a project similar to the creation of two programs - server and client - that communicate through signals (SIGUSR1 e SIGUSR2), [MiniTalk](https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/Minitalk_fgastal-.pdf). 
 
@@ -39,7 +42,7 @@ It is also important to say that, as a matter of strategy, my 42 Labs project ha
 
 ---
 
-- **Phase 2 - Data Structures 🕸**
+**Phase 2 - Data Structures 🕸**
 
 > 2.1 Huffman's Tree 🌳
 
@@ -262,7 +265,7 @@ Join the string s2 to string s1 generating a new string.
 
 </details>
 
-🐾 4 | Dictionary 📖🔮
+🐾 4 | Encoding 🔒 and Dictionary 📖
 
 In the image above, you can see that when we go to a path to the left, we get the binary value 0, this is a convention of Huffman's Law. If we go to the right, we get the value 1. Therefore, to get to char "R", we get the binary value 0100, which is 4 bits. This implies that if we were to use the ASCII table to determine its value in binary, we would arrive at the value 01010010, which is 8 bits. Therefore, using the binary tree, we can use fewer bits to arrive at a desired character value. 🔎
 
@@ -289,7 +292,7 @@ symbol  | frequency | encoding (bits)
 `t` | 4 | 101
 ` ` | 5 | 00
 
-<a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/dictionary.png" alt="Dictionary"></a>
+<a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/dictionary_output.png" alt="Dictionary"></a>
 
 <details>
   <summary>The functions created for this step were:</summary>
@@ -335,12 +338,6 @@ Join the string s2 to string s1 generating a new string.
 @param[out] s1 The memory area to join to.
 @param[in]  s2  The memory area to copy from.
 */
-</details>
-
-🐾 5 | Encoding 🔒
-
-<details>
-  <summary>The functions created for this step were:</summary>
 
 * ```char* encode(char ** dictionary, unsigned char *text);```
  /*
@@ -348,11 +345,12 @@ Join the string s2 to string s1 generating a new string.
 @param[out] s1 The memory area to join to.
 @param[in]  s2  The memory area to copy from.
 */
+
 </details>
 
 🐾 5 | Decoding 🔓
 
-Decoding is the reverse process of the above. :) That is, we have the sequence of bits, for example:
+Decoding is the reverse process of the above.  That is, we have the sequence of bits, for example:
 
 ```11100111011111011111010001011100110101110010100```
 
@@ -370,4 +368,12 @@ Join the string s2 to string s1 generating a new string.
 @param[in]  s2  The memory area to copy from.
 */
 </details>
+
+<a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/decoder_output.png" alt="Decoder"></a>
+
+🐾 6 | Bitwise Operations
+
+🐾 7 | Creating a compressed file (texto.txt)
+
+🐾 8 | Decompressing the archive
 
