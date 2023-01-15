@@ -239,9 +239,9 @@ This table will be called a dictionary! 📖🔮
 
 To assemble it, we need to go through our entire tree from start to finish in a recursive (important) manner, starting at the root and going always to the left, until we reach a leaf. We do this by traversing the entire tree until we have filled our entire dictionary table.
 
-Using again the string "I want to get an internship", we know that going by the ASCII table, we would need 27 * 8 = 216 bits to encode this sentence. Using the binary tree, we need:
+Using again the string "I want to get an internship", we know that going by the ASCII table, we would need 27 * 8 = 216 bits to encode this sentence. Using the binary tree, we only need 58 bits! 🤯
 
-symbol  | frequency | encoding
+symbol  | frequency | encoding (bits)
 ---|------|------|
 `w` | 1	| 11100
 `o` | 1	| 11101
@@ -258,4 +258,5 @@ symbol  | frequency | encoding
 
 <a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/dictionary.png" alt="Dictionary"></a>
 
+🐾 5 | Decoding 🔓
 
