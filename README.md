@@ -385,6 +385,30 @@ Join the string s2 to string s1 generating a new string.
 
 🐾 6 | Bitwise Operations
 
+In this particular step, it was very important to note the parallel with the learning about "Bitwise Operations" obtained in both [Minitalk](https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/Minitalk_fgastal-.pdf) and [Push Swap](https://miro.com/app/board/uXjVPG5JxXA=/?share_link_id=610858182881) during the implementation of the "Radix Sorting Algorithm". :)
+
+Basically, the Right Shift (>>) shifts all bits to the right. So, for example, taking the binary 0010 0100 (equivalent to the number 36 in the base 10 in the ASCII table) and doing a Right Shift >> two places to the right, we have 0000 1001 (equivalent to the number 9 in the base 10 in the ASCII table).
+
+We also have the AND operator which works as follows for each bit:
+
+```
+1 & 1 == 1
+1 & 0 == 0
+0 & 1 == 0
+0 & 0 == 0
+```
+
+So, taking the leading bits of the number 2 in base 10 in the ASCII table and doing the AND (&) operation with the number 5 in base 10 in the ASCII table:
+
+```
+0010
+0101
+_________
+2&5: 1001 (equivalent to the number 9 in ASCII base 10)
+```
+
+Reviewing these concepts was very important in order to implement the compression and decompression part of a file, as we will see in the next two topics. An important reference was this [video here](https://www.youtube.com/watch?v=Ew2QnDeTCCE).
+
 🐾 7 | Creating a compressed file (texto.txt)
 
 🐾 8 | Decompressing the file (texto.txt)
