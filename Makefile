@@ -1,6 +1,6 @@
-SRCS_DIR        = srcs
+SRCS_DIR        = sources
 
-OBJS_DIR		= objs
+OBJS_DIR		= objects
 
 DECODER_FILES	= decoder/main.c
 
