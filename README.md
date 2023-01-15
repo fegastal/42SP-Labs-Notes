@@ -189,11 +189,39 @@ In the figure below, we can analyze how this list is generated in the output:
 
 🐾 3 | Building the Huffman Tree
 
-Após a formação da nossa fila ou lista encadeada ordenada, partimos para a fase de montagem da nossa árvore binária. :) O que é muito legal quando é feita pela primeira vez! :D
+After forming our queue or ordered chained list, we move on to the assembly phase of our binary tree. :) Which is really cool when it's done for the first time! :D
 
-Em um primeiro momento, precisamos remover os dois primeiros elementos (nós) de MENOR frequência: no nosso caso, `w` e `o`. Em uma árvore binária, nós temos "folhas" (um nó que não possui nenhum filho), temos também "nós intermediários" que possuem sempre 2 filhos (quando o caminho se biforca) e a frequência desse nó específico é a soma da frequência de seus filhos.
+At first, we need to remove the first two elements (nodes) of LOWEST frequency: in our case, `w` and `o`. In a binary tree, we have "leaves" (a node which has no children), we also have "intermediate nodes" which always have 2 children (when the path forks) and the frequency of that particular node is the sum of the frequencies of its children.
 
-Parece complicado, mas na verdade é bem simples. Vamos lá:
+It sounds complicated, but it is actually quite simple. Let's go:
 
 <a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/sum_leaf_frequency.png" alt="Sum of leaf frequency"></a>
 
+Now, after inserting the intermediate node into our queue in an ordered fashion, then it will be among the nodes that have frequency 2, considering that the `+` node is an intermediate node, with the leaves `w` and `o`. 
+
+symbol  | frequency |
+---|------|
+`g` | 1 |
+`p` | 1 |
+`r` | 1	|
+`s` | 1 |
+`a` | 2 |
+`e` | 2 |
+`+` | 2 |
+`i` | 3	|
+`n` | 3 |
+`t` | 4 |
+` ` | 5 |
+
+Therefore, it is necessary to repeat the process - now with `g` and `p` - until we get an empty row:
+
+<a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/binary_tree_process_1.png" alt="Sum of leaf frequency"></a>
+<a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/binary_tree_process_2.png" alt="Sum of leaf frequency"></a>
+<a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/binary_tree_process_3.png" alt="Sum of leaf frequency"></a>
+<a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/binary_tree_process_4.png" alt="Sum of leaf frequency"></a>
+<a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/binary_tree_process_5.png" alt="Sum of leaf frequency"></a>
+<a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/binary_tree_process_6.png" alt="Sum of leaf frequency"></a>
+<a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/binary_tree_process_7.png" alt="Sum of leaf frequency"></a>
+<a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/binary_tree_process_8.png" alt="Sum of leaf frequency"></a>
+<a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/binary_tree_process_9.png" alt="Sum of leaf frequency"></a>
+<a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/binary_tree_process_10.png" alt="Sum of leaf frequency"></a>
