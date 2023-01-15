@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   encoder.h                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: fgastal- <fgastal-@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/11/13 05:13:23 by fgastal-          #+#    #+#             */
+/*   Updated: 2022/11/13 05:22:06 by fgastal-         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 // ======================== DEFINITIONS
 
 #ifndef ENCODER_H
@@ -5,7 +17,7 @@
 
 // ======================== MACROS
 
-# define TAM 256
+# define SIZE 256
 
 // ======================== INCLUDES
 
@@ -19,18 +31,18 @@
 
 // ======================== STRUCTS
 
-typedef struct no{
-	unsigned char caracter;
-	int frequencia;
-	struct no *esq;
-	struct no *dir;
-	struct no *proximo;
-}No;
+typedef struct node{
+	unsigned char character;
+	int frequency;
+	struct node *left;
+	struct node *right;
+	struct node *next;
+}Node;
 
-typedef struct lista{
-	No *inicio;
-	int tam;
-}Lista;
+typedef struct list{
+	Node *start;
+	int size;
+}List;
 
 // ======================== UTILS PROTOTYPES
 
