@@ -153,29 +153,29 @@ It has one pointer to the left and one to the right, and all nodes are exactly t
 <details>
   <summary>The functions created for this step were:</summary>
 
-* ```void criar_lista(Lista *lista);```
- /*
+* ```void create_list(List *list)```
+/*
 Join the string s2 to string s1 generating a new string.
 @param[out] s1 The memory area to join to.
 @param[in]  s2  The memory area to copy from.
 */
 
-* ```void inserir_ordenado(Lista *lista, No *no);```
- /*
+* ```void insert_order(List *list, No *no);```
+/*
 Join the string s2 to string s1 generating a new string.
 @param[out] s1 The memory area to join to.
 @param[in]  s2  The memory area to copy from.
 */
 
-* ```void preencher_lista(unsigned int tab[], Lista *lista);```
- /*
+* ```void fill_list(unsigned int tab[], List *list);```
+/*
 Join the string s2 to string s1 generating a new string.
 @param[out] s1 The memory area to join to.
 @param[in]  s2  The memory area to copy from.
 */
 
-* ```void imprimir_lista(Lista *lista);```
- /*
+* ```void print_list(List *list);```
+/*
 Join the string s2 to string s1 generating a new string.
 @param[out] s1 The memory area to join to.
 @param[in]  s2  The memory area to copy from.
@@ -229,6 +229,39 @@ Therefore, it is necessary to repeat the process - now with `g` and `p` - until 
 <a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/binary_tree_process_10.png" alt="Sum of leaf frequency"></a>
 <a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/binary_tree_process_11.png" alt="Sum of leaf frequency"></a>
 
+<details>
+  <summary>The functions created for this step were:</summary>
+
+* ```No* remove_at_start(Lista[] *lista)```
+ /*
+Join the string s2 to string s1 generating a new string.
+@param[out] s1 The memory area to join to.
+@param[in]  s2  The memory area to copy from.
+*/
+
+* ```No* assemble_tree(List *list);```
+ /*
+Join the string s2 to string s1 generating a new string.
+@param[out] s1 The memory area to join to.
+@param[in]  s2  The memory area to copy from.
+*/
+
+* ```void print_tree(No *root, int size);```
+ /*
+Join the string s2 to string s1 generating a new string.
+@param[out] s1 The memory area to join to.
+@param[in]  s2  The memory area to copy from.
+*/
+
+* ```void destroy_tree(No *root);```
+ /*
+Join the string s2 to string s1 generating a new string.
+@param[out] s1 The memory area to join to.
+@param[in]  s2  The memory area to copy from.
+*/
+
+</details>
+
 🐾 4 | Encoding 🔒
 
 In the image above, you can see that when we go to a path to the left, we get the binary value 0, this is a convention of Huffman's Law. If we go to the right, we get the value 1. Therefore, to get to char "R", we get the binary value 0100, which is 4 bits. This implies that if we were to use the ASCII table to determine its value in binary, we would arrive at the value 01010010, which is 8 bits. Therefore, using the binary tree, we can use fewer bits to arrive at a desired character value. 🔎
@@ -258,5 +291,70 @@ symbol  | frequency | encoding (bits)
 
 <a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/dictionary.png" alt="Dictionary"></a>
 
+<details>
+  <summary>The functions created for this step were:</summary>
+
+* ```int height_tree(No *root);```
+ /*
+Join the string s2 to string s1 generating a new string.
+@param[out] s1 The memory area to join to.
+@param[in]  s2  The memory area to copy from.
+*/
+
+* ```char** allocate_dictionary(int columns);```
+ /*
+Join the string s2 to string s1 generating a new string.
+@param[out] s1 The memory area to join to.
+@param[in]  s2  The memory area to copy from.
+*/
+
+* ```void generate_dictionary(char **dictionary, No *root, char *path, int columns);```
+ /*
+Join the string s2 to string s1 generating a new string.
+@param[out] s1 The memory area to join to.
+@param[in]  s2  The memory area to copy from.
+*/
+
+* ```void print_list(List *list);```
+ /*
+Join the string s2 to string s1 generating a new string.
+@param[out] s1 The memory area to join to.
+@param[in]  s2  The memory area to copy from.
+*/
+
+* ```int calculate_string_size(char ** dictionary, unsigned char *text);```
+ /*
+Join the string s2 to string s1 generating a new string.
+@param[out] s1 The memory area to join to.
+@param[in]  s2  The memory area to copy from.
+*/
+
+* ```char* encode(char ** dictionary, unsigned char *text);```
+ /*
+Join the string s2 to string s1 generating a new string.
+@param[out] s1 The memory area to join to.
+@param[in]  s2  The memory area to copy from.
+*/
+</details>
+
 🐾 5 | Decoding 🔓
 
+Decoding is the reverse process of the above. :) That is, we have the sequence of bits, for example:
+
+```11100111011111011111010001011100110101110010100```
+
+From this sequence, we can take the first byte (i.e., the first 8 bits of it) and, starting from the root of our tree, we will walk over it. The first byte of our sequence is:
+
+So first we go right (1), then right (1), right (1), left (0) and left (0). Considering this path, we can find a leaf (i.e., no children). Therefore, we find the character `w`. 🤗 After finding the leaf, we go back to the root of the tree and start the process all over again until we reach a leaf (and a corresponding character) again.
+
+<details>
+  <summary>The functions created for this step were:</summary>
+
+* ```char* decode(unsigned char text[], No *root)
+;```
+ /*
+Join the string s2 to string s1 generating a new string.
+@param[out] s1 The memory area to join to.
+@param[in]  s2  The memory area to copy from.
+*/
+</details>
