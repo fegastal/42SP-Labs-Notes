@@ -22,7 +22,7 @@ Short on time? You can check the [challenge subject 🥵](https://github.com/feg
 
 ---
 
-**Phase 1 - Initial Studies 📚**
+## Phase 1 - Initial Studies 📚
 
 After reading the subject, I had an impression that it was a project similar to the creation of two programs - server and client - that communicate through signals (SIGUSR1 e SIGUSR2), [MiniTalk](https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/Minitalk_fgastal-.pdf). 
 
@@ -42,7 +42,7 @@ It is also important to say that, as a matter of strategy, my 42 Labs project ha
 
 ---
 
-**Phase 2 - Data Structures 🕸**
+## Phase 2 - Data Structures 🕸
 
 > 2.1 Huffman's Tree 🌳
 
