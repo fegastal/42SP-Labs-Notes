@@ -34,8 +34,4 @@ typedef struct lista{
 
 // ======================== UTILS PROTOTYPES
 
-void	inicializa_tabela_com_zero(unsigned int tab[]);
-void	preenche_tab_frequencia(unsigned char texto[], unsigned int tab[]);
-void	imprime_tab_frequencia(unsigned int tab[]);
-
 #endif
