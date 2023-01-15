@@ -193,6 +193,8 @@ After forming our queue or ordered chained list, we move on to the assembly phas
 
 At first, we need to remove the first two elements (nodes) of LOWEST frequency: in our case, `w` and `o`. In a binary tree, we have "leaves" (a node which has no children), we also have "intermediate nodes" which always have 2 children (when the path forks) and the frequency of that particular node is the sum of the frequencies of its children.
 
+One important detail is that a binary tree is different from a binary search tree, specifically. Here, smaller elements are always to the left of the root and larger elements are to the right of it. :)
+
 It sounds complicated, but it is actually quite simple. Let's go:
 
 <a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/sum_leaf_frequency.png" alt="Sum of leaf frequency"></a>
@@ -225,3 +227,5 @@ Therefore, it is necessary to repeat the process - now with `g` and `p` - until 
 <a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/binary_tree_process_8.png" alt="Sum of leaf frequency"></a>
 <a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/binary_tree_process_9.png" alt="Sum of leaf frequency"></a>
 <a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/binary_tree_process_10.png" alt="Sum of leaf frequency"></a>
+<a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/binary_tree_process_11.png" alt="Sum of leaf frequency"></a>
+
