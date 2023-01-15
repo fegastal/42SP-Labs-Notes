@@ -373,12 +373,13 @@ So first we go right (1), then right (1), right (1), left (0) and left (0). Cons
 <details>
   <summary>The functions created for this step were:</summary>
 
-* ```char* decode(unsigned char text[], No *root)
+* ```char* decode(unsigned char text[], No *root); ```
  /*
 Join the string s2 to string s1 generating a new string.
 @param[out] s1 The memory area to join to.
 @param[in]  s2  The memory area to copy from.
 */
+
 </details>
 
 <a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/decoder_output.png" alt="Decoder"></a>
