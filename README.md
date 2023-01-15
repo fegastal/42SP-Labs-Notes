@@ -351,7 +351,6 @@ So first we go right (1), then right (1), right (1), left (0) and left (0). Cons
   <summary>The functions created for this step were:</summary>
 
 * ```char* decode(unsigned char text[], No *root)
-;```
  /*
 Join the string s2 to string s1 generating a new string.
 @param[out] s1 The memory area to join to.
