@@ -143,25 +143,23 @@ symbol  | frequency |
 <details>
   <summary>The functions created for this step were:</summary>
 
-*```void initializes_tab_with_zero(unsigned int tab[])``` has the goal of making the table initialization from zero elements, considering that TAM equals 256.
+*```void initializes_tab_with_zero(unsigned int tab[])```
  /*
-Join the string s2 to string s1 generating a new string.
-@param[out] s1 The memory area to join to.
-@param[in]  s2  The memory area to copy from.
+has the goal of making the table initialization from zero elements, considering that SIZE equals 256.
+@param tab[] the frequency table.
 */
 
-*```void fill_tab_frequency(unsigned char texto[], unsigned int tab[])``` receives both the characters (char) that are passed as a text array, as well as the amount of their frequency (int);
+*```void fill_tab_frequency(unsigned char text[], unsigned int tab[])```
  /*
- Join the string s2 to string s1 generating a new string.
-@param[out] s1 The memory area to join to.
-@param[in]  s2  The memory area to copy from.
+receives both the characters (char) that are passed as a text array, as well as the amount of their frequency (int).
+@param[out] text[] the string I want to encode.
+@param[in] tab[] the frequency table.
 */
 
-*```void print_tab_frequency(unsigned int tab[])``` takes the table generated in the previous function and prints it to the terminal. :) It was used as a test, basically.
+*```void print_tab_frequency(unsigned int tab[])``` 
 /*
-Join the string s2 to string s1 generating a new string.
-@param[out] s1 The memory area to join to.
-@param[in]  s2  The memory area to copy from.
+Takes the table generated in the previous function and prints it to the terminal. It was used as a test, basically.
+@param tab[] the frequency table.
 */
 </details>
 
@@ -207,30 +205,28 @@ It has one pointer to the left and one to the right, and all nodes are exactly t
 
 * ```void create_list(List *list)```
 /*
-Join the string s2 to string s1 generating a new string.
-@param[out] s1 The memory area to join to.
-@param[in]  s2  The memory area to copy from.
+Function that creates an ordered list.
+@param the ordered list that will be used to form the binary tree.
 */
 
 * ```void insert_order(List *list, No *no);```
 /*
-Join the string s2 to string s1 generating a new string.
-@param[out] s1 The memory area to join to.
-@param[in]  s2  The memory area to copy from.
+Function that inserts a node in an ordered linked list.
+@param[out] the ordered list that will be used to form the binary tree.
+@param[in] the node generated from two elements in the ordered list.
 */
 
 * ```void fill_list(unsigned int tab[], List *list);```
 /*
-Join the string s2 to string s1 generating a new string.
-@param[out] s1 The memory area to join to.
-@param[in]  s2  The memory area to copy from.
+Function that fills the list with nodes in an ordered (ascending) manner.
+@param[out] tab[] the frequency table.
+@param[in]  the ordered list that will be used to form the binary tree.
 */
 
 * ```void print_list(List *list);```
 /*
-Join the string s2 to string s1 generating a new string.
-@param[out] s1 The memory area to join to.
-@param[in]  s2  The memory area to copy from.
+Function that prints the list on the terminal.
+@param the ordered list that will be used to form the binary tree.
 */
 
 </details>
@@ -284,32 +280,29 @@ Therefore, it is necessary to repeat the process - now with `g` and `p` - until 
 <details>
   <summary>The functions created for this step were:</summary>
 
-* ```No* remove_at_start(Lista[] *lista)```
+* ```No* remove_at_start(List *list)```
  /*
-Join the string s2 to string s1 generating a new string.
-@param[out] s1 The memory area to join to.
-@param[in]  s2  The memory area to copy from.
+Function that removes the first two lowest frequency nodes.
+@param the ordered list that will be used to form the binary tree.
 */
 
 * ```No* assemble_tree(List *list);```
  /*
-Join the string s2 to string s1 generating a new string.
-@param[out] s1 The memory area to join to.
-@param[in]  s2  The memory area to copy from.
+Function that constructs the huffman tree.
+@param the priority queue.
 */
 
 * ```void print_tree(No *root, int size);```
  /*
-Join the string s2 to string s1 generating a new string.
-@param[out] s1 The memory area to join to.
-@param[in]  s2  The memory area to copy from.
+Function that prints the Huffman's tree.
+@param[out] the root node of the binary tree.
+@param[in]  the size of the tree.
 */
 
 * ```void destroy_tree(No *root);```
  /*
-Join the string s2 to string s1 generating a new string.
-@param[out] s1 The memory area to join to.
-@param[in]  s2  The memory area to copy from.
+Function to destroy the nodes of the tree and release the stored memory.
+@param the root node of the binary tree.
 */
 
 </details>
@@ -348,53 +341,61 @@ symbol  | frequency | encoding (bits)
 
 * ```int height_tree(No *root);```
  /*
-Join the string s2 to string s1 generating a new string.
-@param[out] s1 The memory area to join to.
-@param[in]  s2  The memory area to copy from.
+Function to check the height of the binary tree. 
+Note that + 1 is for the null character '\0'.
+@param the root node of the binary tree.
 */
 
 * ```char** allocate_dictionary(int columns);```
  /*
-Join the string s2 to string s1 generating a new string.
-@param[out] s1 The memory area to join to.
-@param[in]  s2  The memory area to copy from.
+Function that allocates memory for the dictionary, 
+receiving the value of the number of columns (which is the 
+height of the Huffman tree + 1)
+Important to note that the number of rows, in turn, is the 
+size of the ASCII table (macro SIZE).
+@param the number of columns in the matrix.
 */
 
 * ```void generate_dictionary(char **dictionary, No *root, char *path, int columns);```
  /*
-Join the string s2 to string s1 generating a new string.
-@param[out] s1 The memory area to join to.
-@param[in]  s2  The memory area to copy from.
+In this function I will produce (generate) my dictionary. I get some parameters
+like the dictionary, the root node, the path and the columns.
+Note that this is a recursive procedure: as I go 
+in my tree to the left(0) or to the right(1), I concatenate (with
+strcat) to 0 or 1, and the path is precisely the code of the character
+generated until it reaches a leaf 
+(that is, a non-intermediate node, with no children).
+@param the dictionary.
+@param the root node of the binary tree.
+@param the path of the tree in bits.
+@param the number of columns in the matrix.
 */
 
 * ```void print_list(List *list);```
  /*
-Join the string s2 to string s1 generating a new string.
-@param[out] s1 The memory area to join to.
-@param[in]  s2  The memory area to copy from.
+Function for printing the dictionary.
+@param the sorted list.
 */
 
 * ```int calculate_string_size(char ** dictionary, unsigned char *text);```
  /*
-Join the string s2 to string s1 generating a new string.
-@param[out] s1 The memory area to join to.
-@param[in]  s2  The memory area to copy from.
+Function that calculates the string size, 
+given the dictionary and the text
+as parameters. Note that text[i] will 
+become a number represented in ASCII.
+@param double pointer to the dictionary.
+@param the text to be encoded / decoded.
 */
 
 * ```char* encode(char ** dictionary, unsigned char *text);```
  /*
-Join the string s2 to string s1 generating a new string.
-@param[out] s1 The memory area to join to.
-@param[in]  s2  The memory area to copy from.
+Function responsible for doing the encoding of our text.
+Receives as parameter the dictionary and the strings.
+Note that calloc takes the number of characters from an array
+and the size of a character.
+@param double pointer to the dictionary.
+@param the text to be encoded / decoded.
 */
-
-* ```char* encode(char ** dictionary, unsigned char *text);```
- /*
-Join the string s2 to string s1 generating a new string.
-@param[out] s1 The memory area to join to.
-@param[in]  s2  The memory area to copy from.
-*/
-
 </details>
 
 🐾 5 | Decoding 🔓
@@ -410,13 +411,13 @@ So first we go right (1), then right (1), right (1), left (0) and left (0). Cons
 <details>
   <summary>The functions created for this step were:</summary>
 
-* ```char* decode(unsigned char text[], No *root); ```
- /*
-Join the string s2 to string s1 generating a new string.
-@param[out] s1 The memory area to join to.
-@param[in]  s2  The memory area to copy from.
+* ```char* decode(unsigned char text[], Node *root);```
+/*
+Function responsible for the decoding - the process 
+inverse to the codification - of a text. 
+@param[out] the text to be encoded / decoded.
+@param[in] the root node of the binary tree.
 */
-
 </details>
 
 <a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/decoder_output.png" alt="Decoder"></a>
@@ -447,21 +448,38 @@ _________
 
 Reviewing these concepts was very important in order to implement the compression and decompression part of a file, as we will see in the next two topics. An important reference was this [video here](https://www.youtube.com/watch?v=Ew2QnDeTCCE).
 
-🐾 7 | Creating a compressed file (texto.txt)
+🐾 7 | Creating a compressed file (text.txt)
 
-🐾 8 | Decompressing the file (texto.txt)
+🐾 8 | Decompressing the file (text.txt)
 
 ---
 
 > 2.2 Map
 
-Next structure to be created is a map of the symbols and their respective codes. Since in a tree, the paths from the root to any of the leaves (Nodes where the two descendants, left and right, are null) are unique, the encoding and decoding of the codes always have an associated tree.
+Next structure to be created is a [map of the symbols and their respective codes](https://www.geeksforgeeks.org/which-data-structure-is-used-by-map/). Since in a tree, the paths from the root to any of the leaves (Nodes where the two descendants, left and right, are null) are unique, the encoding and decoding of the codes always have an associated tree.
+
+According to the link above: 
+
+> "Map is the part of the STL library that stores key value pairs in it and no two values have the same keys but the different keys can store similar values. The map stores keys in sorted order. For map’s internal implementation it uses Red-Black Tree."
+
+> "A red-black tree is a kind of self-balancing binary search tree where each node has an extra bit, and that bit is often interpreted as the color (red or black) which is used to ensure that the tree remains balanced during insertions and deletions."
+
+<a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/red_black_tree.png" alt="Red Black Tree"></a>
 
 ---
 
-## Sharing Memory
+## Phase 3 - Sharing Memory 🤝
 
-<a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/shared_memory_operations.png" alt="Shared Memory Operations"></a>
+Due to the research on the subject with a short time to go, I have not yet been able to delve into it. However, from the little that I have researched, I know that  Shared memory is an operating-system feature that allows the database server threads and processes to share data by sharing access to pools of memory.
+
+The database server uses shared memory for the following purposes:
+
+* To reduce memory usage and disk I/O - enables the database server to reduce overall memory usage because the participating processes, in this case, virtual processors, do not require maintaining private copies of the data that is in shared memory.
+* To perform high-speed communication between processes, because it processes read and write messages at the speed of memory transfers.
+
+The figure below was made based on the studies of cadet @eandre-f. 🤓 Here, you can get a sense of the whole.
+
+<a href=""><img src="https://github.com/fegastal/42SP-Labs-Notes/blob/main/documents/image/shared_memory_operations_2.png" alt="Shared Memory Operations"></a>
 
 ---
 ## Cadet contributors
