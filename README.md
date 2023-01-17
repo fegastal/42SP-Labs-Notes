@@ -60,7 +60,7 @@ In this sense, it was necessary to make a study schedule during the week of the 
 
 At the moment the project compresses and decompresses a text in encoded .txt format. However, there is no presence of two programs separately - ```encoder and decoder``` - and there was the study of the "Shared Memory" and "Map" part, however it was not possible to implement it (not yet).
 
-However, despite the time limit for the challenge, the project will continue to be implemented until the remaining parts requested by the subject are completed. 👾
+Despite the time limit for the challenge, the project will continue to be implemented until the remaining parts requested by the subject are completed. 👾
 
 ---
 
